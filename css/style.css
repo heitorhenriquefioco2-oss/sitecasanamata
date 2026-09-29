@@ -1,0 +1,4717 @@
+/* =========================================================
+
+   CASA NA MATA
+
+   style.css
+
+========================================================= */
+
+
+
+
+
+/* =========================================================
+
+   FONTES
+
+========================================================= */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap');
+
+
+
+
+
+/* =========================================================
+
+   VARIÁVEIS
+
+========================================================= */
+
+
+
+:root {
+
+
+
+    --color-dark: #172019;
+
+    --color-dark-soft: #243027;
+
+
+
+    --color-green: #3f5542;
+
+    --color-green-light: #667968;
+
+
+
+    --color-cream: #f3f0e8;
+
+    --color-beige: #ded8cb;
+
+
+
+    --color-white: #ffffff;
+
+    --color-black: #111111;
+
+
+
+    --color-text: #30372f;
+
+    --color-muted: #757b73;
+
+
+
+    --border-color: rgba(23, 32, 25, 0.15);
+
+
+
+    --font-primary: "DM Sans", sans-serif;
+
+    --font-display: "Playfair Display", serif;
+
+
+
+    --section-padding: 130px;
+
+
+
+    --transition: 0.35s ease;
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+
+   RESET / GERAL
+
+========================================================= */
+
+
+
+* {
+
+    box-sizing: border-box;
+
+}
+
+
+
+
+
+html {
+
+    scroll-behavior: smooth;
+
+    scroll-padding-top: 90px;
+
+}
+
+
+
+
+
+body {
+
+
+
+    margin: 0;
+
+
+
+    font-family: var(--font-primary);
+
+
+
+    font-size: 16px;
+
+    font-weight: 300;
+
+    line-height: 1.75;
+
+
+
+    color: var(--color-text);
+
+
+
+    background-color: var(--color-cream);
+
+
+
+    overflow-x: hidden;
+
+}
+
+
+
+
+
+img {
+
+    display: block;
+
+    max-width: 100%;
+
+}
+
+
+
+
+
+a {
+
+    color: inherit;
+
+    text-decoration: none;
+
+}
+
+
+
+
+
+::selection {
+
+    color: var(--color-white);
+
+    background-color: var(--color-green);
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+
+   CONTAINER
+
+========================================================= */
+
+
+
+@media (min-width: 1400px) {
+
+
+
+    .container {
+
+        max-width: 1320px;
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+
+   TIPOGRAFIA
+
+========================================================= */
+
+
+
+h1,
+
+h2,
+
+h3,
+
+h4,
+
+h5,
+
+h6 {
+
+
+
+    margin-top: 0;
+
+
+
+    color: var(--color-dark);
+
+
+
+    font-family: var(--font-display);
+
+    font-weight: 400;
+
+
+
+}
+
+
+
+
+
+p {
+
+    margin-bottom: 1.5rem;
+
+}
+
+
+
+
+
+.section {
+
+
+
+    position: relative;
+
+
+
+    padding-top: var(--section-padding);
+
+    padding-bottom: var(--section-padding);
+
+
+
+}
+
+
+
+
+
+.section-eyebrow {
+
+
+
+    display: inline-block;
+
+
+
+    margin-bottom: 22px;
+
+
+
+    color: var(--color-green);
+
+
+
+    font-size: 0.72rem;
+
+    font-weight: 500;
+
+
+
+    line-height: 1;
+
+
+
+    letter-spacing: 0.23em;
+
+
+
+    text-transform: uppercase;
+
+
+
+}
+
+
+
+
+
+.section-title {
+
+
+
+    margin-bottom: 32px;
+
+
+
+    max-width: 850px;
+
+
+
+    font-size: clamp(2.7rem, 5vw, 5rem);
+
+
+
+    line-height: 1.03;
+
+
+
+    letter-spacing: -0.035em;
+
+
+
+}
+
+
+
+
+
+.section-lead {
+
+
+
+    max-width: 580px;
+
+
+
+    color: var(--color-dark-soft);
+
+
+
+    font-size: 1.2rem;
+
+
+
+    line-height: 1.65;
+
+
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+
+   BOTÕES
+
+========================================================= */
+
+
+
+.btn {
+
+
+
+    border-radius: 0;
+
+
+
+    padding: 15px 27px;
+
+
+
+    font-size: 0.79rem;
+
+    font-weight: 500;
+
+
+
+    letter-spacing: 0.08em;
+
+
+
+    text-transform: uppercase;
+
+
+
+    transition:
+
+        background-color var(--transition),
+
+        border-color var(--transition),
+
+        color var(--transition),
+
+        transform var(--transition);
+
+
+
+}
+
+
+
+
+
+.btn:hover {
+
+    transform: translateY(-2px);
+
+}
+
+
+
+
+
+.btn-primary-custom {
+
+
+
+    color: var(--color-white);
+
+
+
+    border: 1px solid var(--color-green);
+
+
+
+    background-color: var(--color-green);
+
+
+
+}
+
+
+
+
+
+.btn-primary-custom:hover {
+
+
+
+    color: var(--color-white);
+
+
+
+    border-color: var(--color-dark);
+
+
+
+    background-color: var(--color-dark);
+
+
+
+}
+
+
+
+
+
+.btn-outline-custom {
+
+
+
+    color: var(--color-white);
+
+
+
+    border: 1px solid rgba(255, 255, 255, 0.75);
+
+
+
+    background-color: transparent;
+
+
+
+}
+
+
+
+
+
+.btn-outline-custom:hover {
+
+
+
+    color: var(--color-dark);
+
+
+
+    border-color: var(--color-white);
+
+
+
+    background-color: var(--color-white);
+
+
+
+}
+
+
+
+
+
+.btn-outline-dark-custom {
+
+
+
+    color: var(--color-dark);
+
+
+
+    border: 1px solid var(--color-dark);
+
+
+
+}
+
+
+
+
+
+.btn-outline-dark-custom:hover {
+
+
+
+    color: var(--color-white);
+
+
+
+    background-color: var(--color-dark);
+
+
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+
+   NAVBAR
+
+========================================================= */
+
+
+
+/* =========================================================
+
+   NAVBAR
+
+========================================================= */
+
+
+
+#mainNavbar {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+
+
+    width: 100%;
+
+
+
+    z-index: 1050;
+
+
+
+    padding: 22px 0;
+
+
+
+    background-color: transparent;
+
+
+
+    transition:
+
+        background-color 0.35s ease,
+
+        padding 0.35s ease,
+
+        box-shadow 0.35s ease,
+
+        backdrop-filter 0.35s ease;
+
+}
+
+
+
+
+
+/* LOGO */
+
+
+
+#mainNavbar .navbar-brand {
+
+    color: #ffffff;
+
+
+
+    font-family: var(--font-display);
+
+
+
+    font-size: 1.75rem;
+
+    font-weight: 400;
+
+
+
+    letter-spacing: -0.03em;
+
+
+
+    transition:
+
+        color 0.35s ease,
+
+        font-size 0.35s ease;
+
+}
+
+
+
+
+
+#mainNavbar .navbar-brand:hover {
+
+    color: #ffffff;
+
+}
+
+
+
+
+
+/* LINKS */
+
+
+
+#mainNavbar .nav-link {
+
+    position: relative;
+
+
+
+    padding: 10px 4px !important;
+
+
+
+    color: rgba(255, 255, 255, 0.88);
+
+
+
+    font-size: 0.72rem;
+
+    font-weight: 500;
+
+
+
+    letter-spacing: 0.09em;
+
+
+
+    text-transform: uppercase;
+
+
+
+    transition: color 0.3s ease;
+
+}
+
+
+
+
+
+#mainNavbar .nav-link:hover {
+
+    color: #ffffff;
+
+}
+
+
+
+
+
+/* LINHA EMBAIXO */
+
+
+
+#mainNavbar .nav-link::after {
+
+    content: "";
+
+
+
+    position: absolute;
+
+
+
+    left: 4px;
+
+    bottom: 3px;
+
+
+
+    width: 0;
+
+    height: 1px;
+
+
+
+    background-color: #ffffff;
+
+
+
+    transition: width 0.3s ease;
+
+}
+
+
+
+
+
+#mainNavbar .nav-link:hover::after {
+
+    width: calc(100% - 8px);
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+
+   BOTÃO RESERVAR
+
+========================================================= */
+
+
+
+#mainNavbar .btn-reserva {
+
+    padding: 13px 24px;
+
+
+
+    color: var(--color-dark);
+
+
+
+    border: 1px solid #ffffff;
+
+
+
+    background-color: #ffffff;
+
+
+
+    font-size: 0.68rem;
+
+
+
+    letter-spacing: 0.1em;
+
+
+
+    transition:
+
+        color 0.3s ease,
+
+        background-color 0.3s ease,
+
+        border-color 0.3s ease;
+
+}
+
+
+
+
+
+#mainNavbar .btn-reserva:hover {
+
+    color: #ffffff;
+
+
+
+    background-color: transparent;
+
+
+
+    border-color: #ffffff;
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+
+   NAVBAR DEPOIS DO SCROLL
+
+========================================================= */
+
+
+
+#mainNavbar.scrolled {
+
+    padding: 13px 0;
+
+
+
+    background-color: rgba(23, 32, 25, 0.92);
+
+
+
+    box-shadow:
+
+        0 8px 30px rgba(0, 0, 0, 0.10);
+
+
+
+    -webkit-backdrop-filter: blur(14px);
+
+    backdrop-filter: blur(14px);
+
+
+
+    border-bottom:
+
+        1px solid rgba(255, 255, 255, 0.08);
+
+}
+
+
+
+
+
+/* Logo levemente menor */
+
+
+
+#mainNavbar.scrolled .navbar-brand {
+
+    font-size: 1.55rem;
+
+}
+
+
+
+
+
+/* Links continuam legíveis */
+
+
+
+#mainNavbar.scrolled .nav-link {
+
+    color: rgba(255, 255, 255, 0.78);
+
+}
+
+
+
+
+
+#mainNavbar.scrolled .nav-link:hover {
+
+    color: #ffffff;
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+
+   MOBILE
+
+========================================================= */
+
+
+
+@media (max-width: 991.98px) {
+
+
+
+    #mainNavbar {
+
+        padding: 14px 0;
+
+
+
+        background-color: rgba(23, 32, 25, 0.95);
+
+
+
+        -webkit-backdrop-filter: blur(14px);
+
+        backdrop-filter: blur(14px);
+
+    }
+
+
+
+
+
+    #mainNavbar .navbar-collapse {
+
+        margin-top: 14px;
+
+
+
+        padding-top: 15px;
+
+        padding-bottom: 15px;
+
+
+
+        border-top:
+
+            1px solid rgba(255, 255, 255, 0.12);
+
+    }
+
+
+
+
+
+    #mainNavbar .nav-link {
+
+        padding: 13px 0 !important;
+
+
+
+        font-size: 0.76rem;
+
+    }
+
+
+
+
+
+    #mainNavbar .nav-link::after {
+
+        display: none;
+
+    }
+
+
+
+
+
+    #mainNavbar .btn-reserva {
+
+        width: 100%;
+
+
+
+        margin-top: 12px;
+
+    }
+
+
+
+}
+
+/* =========================================================
+
+   HERO
+
+========================================================= */
+
+
+
+.hero {
+
+
+
+    position: relative;
+
+
+
+    min-height: 100vh;
+
+
+
+    padding-top: 160px;
+
+    padding-bottom: 50px;
+
+
+
+    color: var(--color-white);
+
+
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    background-position: center;
+
+
+
+}
+
+
+
+
+
+.hero::before {
+
+
+
+    content: "";
+
+
+
+    position: absolute;
+
+
+
+    inset: 0;
+
+
+
+    pointer-events: none;
+
+
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            rgba(6, 12, 7, 0.48) 0%,
+
+            rgba(6, 12, 7, 0.16) 55%,
+
+            rgba(6, 12, 7, 0.04) 100%
+
+        );
+
+
+
+}
+
+
+
+
+
+.hero .container {
+
+
+
+    position: relative;
+
+
+
+    z-index: 2;
+
+
+
+}
+
+
+
+
+
+.hero-content {
+
+
+
+    padding-bottom: 75px;
+
+
+
+}
+
+
+
+
+
+.hero-location {
+
+
+
+    display: block;
+
+
+
+    margin-bottom: 25px;
+
+
+
+    font-size: 0.76rem;
+
+    font-weight: 500;
+
+
+
+    letter-spacing: 0.22em;
+
+
+
+    text-transform: uppercase;
+
+
+
+}
+
+
+
+
+
+.hero-title {
+
+
+
+    margin-bottom: 30px;
+
+
+
+    max-width: 900px;
+
+
+
+    color: var(--color-white);
+
+
+
+    font-size: clamp(3.6rem, 7vw, 7rem);
+
+
+
+    line-height: 0.98;
+
+
+
+    letter-spacing: -0.045em;
+
+
+
+}
+
+
+
+
+
+.hero-description {
+
+
+
+    max-width: 610px;
+
+
+
+    margin-bottom: 0;
+
+
+
+    color: rgba(255, 255, 255, 0.88);
+
+
+
+    font-size: 1.15rem;
+
+
+
+    line-height: 1.7;
+
+
+
+}
+
+
+
+
+
+.hero-info {
+
+
+
+    border-top: 1px solid rgba(255, 255, 255, 0.38);
+
+
+
+}
+
+
+
+
+
+.hero-info-item {
+
+
+
+    display: flex;
+
+    flex-direction: column;
+
+
+
+    padding-top: 28px;
+
+    padding-bottom: 10px;
+
+
+
+}
+
+
+
+
+
+.hero-info-item strong {
+
+
+
+    color: var(--color-white);
+
+
+
+    font-family: var(--font-display);
+
+
+
+    font-size: 1.9rem;
+
+    font-weight: 400;
+
+
+
+    line-height: 1;
+
+
+
+}
+
+
+
+
+
+.hero-info-item span {
+
+
+
+    margin-top: 8px;
+
+
+
+    color: rgba(255, 255, 255, 0.72);
+
+
+
+    font-size: 0.75rem;
+
+
+
+    letter-spacing: 0.12em;
+
+
+
+    text-transform: uppercase;
+
+
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+
+   SOBRE
+
+========================================================= */
+
+
+
+.about {
+
+
+
+    background-color: var(--color-cream);
+
+
+
+}
+
+
+
+
+
+.about p {
+
+
+
+    max-width: 520px;
+
+
+
+}
+
+
+
+
+
+.about-image {
+
+
+
+    position: relative;
+
+
+
+    overflow: hidden;
+
+
+
+}
+
+
+
+
+
+.about-image img {
+
+
+
+    width: 100%;
+
+
+
+    height: 720px;
+
+
+
+    object-fit: cover;
+
+
+
+    transition: transform 1s ease;
+
+
+
+}
+
+
+
+
+
+.about-image:hover img {
+
+
+
+    transform: scale(1.025);
+
+
+
+}
+
+
+
+
+
+.link-arrow {
+
+
+
+    display: inline-flex;
+
+
+
+    align-items: center;
+
+
+
+    gap: 13px;
+
+
+
+    margin-top: 12px;
+
+
+
+    padding-bottom: 6px;
+
+
+
+    color: var(--color-dark);
+
+
+
+    border-bottom: 1px solid var(--color-dark);
+
+
+
+    font-size: 0.78rem;
+
+    font-weight: 500;
+
+
+
+    letter-spacing: 0.1em;
+
+
+
+    text-transform: uppercase;
+
+
+
+    transition:
+
+        color var(--transition),
+
+        gap var(--transition);
+
+
+
+}
+
+
+
+
+
+.link-arrow:hover {
+
+
+
+    color: var(--color-green);
+
+
+
+    gap: 20px;
+
+
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+
+   NÚMEROS
+
+========================================================= */
+
+
+
+.stats {
+
+
+
+    color: var(--color-white);
+
+
+
+    background-color: var(--color-dark);
+
+
+
+}
+
+
+
+
+
+.stat-item {
+
+
+
+    display: flex;
+
+    flex-direction: column;
+
+
+
+    min-height: 190px;
+
+
+
+    align-items: center;
+
+    justify-content: center;
+
+
+
+    border-right: 1px solid rgba(255, 255, 255, 0.13);
+
+
+
+}
+
+
+
+
+
+.stats [class*="col-"]:last-child .stat-item {
+
+    border-right: 0;
+
+}
+
+
+
+
+
+.stat-number {
+
+
+
+    color: var(--color-white);
+
+
+
+    font-family: var(--font-display);
+
+
+
+    font-size: clamp(2.5rem, 4vw, 4.2rem);
+
+
+
+    line-height: 1;
+
+
+
+}
+
+
+
+
+
+.stat-label {
+
+
+
+    margin-top: 12px;
+
+
+
+    color: rgba(255, 255, 255, 0.6);
+
+
+
+    font-size: 0.7rem;
+
+
+
+    letter-spacing: 0.17em;
+
+
+
+    text-transform: uppercase;
+
+
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+
+   DIFERENCIAIS
+
+========================================================= */
+
+
+
+.features {
+
+
+
+    background-color: #ebe7dc;
+
+
+
+}
+
+
+
+
+
+.feature-item {
+
+
+
+    padding-top: 85px;
+
+    padding-bottom: 85px;
+
+
+
+    border-top: 1px solid var(--border-color);
+
+
+
+}
+
+
+
+
+
+.feature-item:last-child {
+
+
+
+    padding-bottom: 0;
+
+
+
+}
+
+
+
+
+
+.feature-image {
+
+
+
+    overflow: hidden;
+
+
+
+}
+
+
+
+
+
+.feature-image img {
+
+
+
+    width: 100%;
+
+
+
+    height: 650px;
+
+
+
+    object-fit: cover;
+
+
+
+    transition: transform 1.1s ease;
+
+
+
+}
+
+
+
+
+
+.feature-item:hover .feature-image img {
+
+
+
+    transform: scale(1.025);
+
+
+
+}
+
+
+
+
+
+.feature-number {
+
+
+
+    display: block;
+
+
+
+    margin-bottom: 30px;
+
+
+
+    color: var(--color-green-light);
+
+
+
+    font-size: 0.7rem;
+
+    font-weight: 500;
+
+
+
+    letter-spacing: 0.18em;
+
+
+
+}
+
+
+
+
+
+.feature-item h3 {
+
+
+
+    margin-bottom: 25px;
+
+
+
+    font-size: clamp(2.3rem, 4vw, 4rem);
+
+
+
+    line-height: 1.05;
+
+
+
+}
+
+
+
+
+
+.feature-item p {
+
+
+
+    max-width: 440px;
+
+
+
+    color: var(--color-muted);
+
+
+
+    font-size: 1.05rem;
+
+
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+
+   AMBIENTES
+
+========================================================= */
+
+
+
+.spaces {
+
+
+
+    background-color: var(--color-cream);
+
+
+
+}
+
+
+
+
+
+.space-card {
+
+
+
+    height: 100%;
+
+
+
+}
+
+
+
+
+
+.space-card > img {
+
+
+
+    width: 100%;
+
+
+
+    height: 520px;
+
+
+
+    object-fit: cover;
+
+
+
+    transition: transform 0.8s ease;
+
+
+
+}
+
+
+
+
+
+.space-card {
+
+
+
+    overflow: hidden;
+
+
+
+}
+
+
+
+
+
+.space-card img {
+
+
+
+    transition: transform 0.8s ease;
+
+
+
+}
+
+
+
+
+
+.space-card:hover img {
+
+
+
+    transform: scale(1.025);
+
+
+
+}
+
+
+
+
+
+.space-card-content {
+
+
+
+    position: relative;
+
+
+
+    z-index: 2;
+
+
+
+    padding-top: 25px;
+
+
+
+    background-color: var(--color-cream);
+
+
+
+}
+
+
+
+
+
+.space-card-content span {
+
+
+
+    display: block;
+
+
+
+    margin-bottom: 7px;
+
+
+
+    color: var(--color-muted);
+
+
+
+    font-size: 0.68rem;
+
+
+
+    letter-spacing: 0.15em;
+
+
+
+}
+
+
+
+
+
+.space-card-content h3 {
+
+
+
+    margin-bottom: 0;
+
+
+
+    font-size: 2rem;
+
+
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+
+   EXPERIÊNCIA
+
+========================================================= */
+
+
+
+.experience {
+
+
+
+    overflow: hidden;
+
+
+
+    background-color: var(--color-dark);
+
+
+
+}
+
+
+
+
+
+.experience-image {
+
+
+
+    height: 100%;
+
+
+
+    min-height: 850px;
+
+
+
+}
+
+
+
+
+
+.experience-image img {
+
+
+
+    object-fit: cover;
+
+
+
+}
+
+
+
+
+
+.experience-content {
+
+
+
+    display: flex;
+
+    flex-direction: column;
+
+
+
+    height: 100%;
+
+
+
+    justify-content: center;
+
+
+
+    padding: 110px 11%;
+
+
+
+    color: rgba(255, 255, 255, 0.75);
+
+
+
+}
+
+
+
+
+
+.experience-content .section-eyebrow {
+
+
+
+    color: #b9c5b7;
+
+
+
+}
+
+
+
+
+
+.experience-content .section-title {
+
+
+
+    color: var(--color-white);
+
+
+
+}
+
+
+
+
+
+.experience-list {
+
+
+
+    margin-top: 30px;
+
+
+
+}
+
+
+
+
+
+.experience-item {
+
+
+
+    padding-top: 28px;
+
+    padding-bottom: 28px;
+
+
+
+    border-top: 1px solid rgba(255, 255, 255, 0.16);
+
+
+
+}
+
+
+
+
+
+.experience-time {
+
+
+
+    display: block;
+
+
+
+    margin-bottom: 13px;
+
+
+
+    color: #b6c0b4;
+
+
+
+    font-size: 0.68rem;
+
+
+
+    letter-spacing: 0.18em;
+
+
+
+    text-transform: uppercase;
+
+
+
+}
+
+
+
+
+
+.experience-item h3 {
+
+
+
+    margin-bottom: 10px;
+
+
+
+    color: var(--color-white);
+
+
+
+    font-size: 1.65rem;
+
+
+
+}
+
+
+
+
+
+.experience-item p {
+
+
+
+    max-width: 500px;
+
+
+
+    margin-bottom: 0;
+
+
+
+    color: rgba(255, 255, 255, 0.62);
+
+
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+
+   COMODIDADES
+
+========================================================= */
+
+
+
+.amenities {
+
+
+
+    background-color: #e4dfd3;
+
+
+
+}
+
+
+
+
+
+.amenity-group {
+
+
+
+    height: 100%;
+
+
+
+    padding: 45px;
+
+
+
+    border: 1px solid rgba(23, 32, 25, 0.18);
+
+
+
+    transition:
+
+        background-color var(--transition),
+
+        color var(--transition),
+
+        transform var(--transition);
+
+
+
+}
+
+
+
+
+
+.amenity-group:hover {
+
+
+
+    color: var(--color-white);
+
+
+
+    background-color: var(--color-dark);
+
+
+
+    transform: translateY(-5px);
+
+
+
+}
+
+
+
+
+
+.amenity-number {
+
+
+
+    display: block;
+
+
+
+    margin-bottom: 55px;
+
+
+
+    color: var(--color-muted);
+
+
+
+    font-size: 0.7rem;
+
+
+
+    letter-spacing: 0.18em;
+
+
+
+}
+
+
+
+
+
+.amenity-group h3 {
+
+
+
+    margin-bottom: 30px;
+
+
+
+    font-size: 2.1rem;
+
+
+
+    transition: color var(--transition);
+
+
+
+}
+
+
+
+
+
+.amenity-group:hover h3 {
+
+
+
+    color: var(--color-white);
+
+
+
+}
+
+
+
+
+
+.amenity-group ul {
+
+
+
+    margin: 0;
+
+
+
+}
+
+
+
+
+
+.amenity-group li {
+
+
+
+    padding-top: 12px;
+
+    padding-bottom: 12px;
+
+
+
+    border-bottom: 1px solid rgba(23, 32, 25, 0.11);
+
+
+
+    font-size: 0.93rem;
+
+
+
+}
+
+
+
+
+
+.amenity-group:hover li {
+
+
+
+    border-color: rgba(255, 255, 255, 0.14);
+
+
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+
+   GALERIA
+
+========================================================= */
+
+
+
+.gallery {
+
+
+
+    background-color: var(--color-cream);
+
+
+
+}
+
+
+
+
+
+.gallery-item {
+
+
+
+    position: relative;
+
+
+
+    height: 430px;
+
+
+
+    margin: 0;
+
+
+
+    overflow: hidden;
+
+
+
+    cursor: pointer;
+
+
+
+}
+
+
+
+
+
+.gallery-item img {
+
+
+
+    width: 100%;
+
+    height: 100%;
+
+
+
+    object-fit: cover;
+
+
+
+    transition:
+
+        transform 0.9s ease,
+
+        filter 0.9s ease;
+
+
+
+}
+
+
+
+
+
+.gallery-item::after {
+
+
+
+    content: "";
+
+
+
+    position: absolute;
+
+
+
+    inset: 0;
+
+
+
+    opacity: 0;
+
+
+
+    background-color: rgba(15, 24, 17, 0.15);
+
+
+
+    transition: opacity var(--transition);
+
+
+
+}
+
+
+
+
+
+.gallery-item:hover::after {
+
+
+
+    opacity: 1;
+
+
+
+}
+
+
+
+
+
+.gallery-item:hover img {
+
+
+
+    transform: scale(1.035);
+
+
+
+}
+
+
+
+
+
+.gallery .col-md-8 .gallery-item {
+
+
+
+    height: 560px;
+
+
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+
+   LOCALIZAÇÃO
+
+========================================================= */
+
+
+
+.location {
+
+
+
+    background-color: #e9e4d8;
+
+
+
+}
+
+
+
+
+
+.location-map {
+
+
+
+    min-height: 600px;
+
+
+
+}
+
+
+
+
+
+.location-map-placeholder {
+
+
+
+    width: 100%;
+
+    height: 600px;
+
+
+
+    color: var(--color-white);
+
+
+
+    background:
+
+        linear-gradient(
+
+            rgba(23, 32, 25, 0.42),
+
+            rgba(23, 32, 25, 0.42)
+
+        ),
+
+        url("../assets/images/galeria-01.jpeg");
+
+
+
+    background-size: cover;
+
+    background-position: center;
+
+
+
+}
+
+
+
+
+
+.location-map-placeholder span {
+
+
+
+    padding: 12px 20px;
+
+
+
+    border: 1px solid rgba(255, 255, 255, 0.65);
+
+
+
+    font-size: 0.72rem;
+
+
+
+    letter-spacing: 0.16em;
+
+
+
+    text-transform: uppercase;
+
+
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+
+   FAQ
+
+========================================================= */
+
+
+
+.faq {
+
+
+
+    background-color: var(--color-cream);
+
+
+
+}
+
+
+
+
+
+.accordion {
+
+
+
+    --bs-accordion-bg: transparent;
+
+    --bs-accordion-border-color: var(--border-color);
+
+    --bs-accordion-btn-bg: transparent;
+
+    --bs-accordion-active-bg: transparent;
+
+    --bs-accordion-active-color: var(--color-dark);
+
+
+
+}
+
+
+
+
+
+.accordion-item {
+
+
+
+    border-bottom: 1px solid var(--border-color) !important;
+
+
+
+}
+
+
+
+
+
+.accordion-button {
+
+
+
+    padding: 28px 0;
+
+
+
+    color: var(--color-dark);
+
+
+
+    background: transparent;
+
+
+
+    box-shadow: none !important;
+
+
+
+    font-family: var(--font-display);
+
+
+
+    font-size: 1.45rem;
+
+
+
+}
+
+
+
+
+
+.accordion-button:not(.collapsed) {
+
+
+
+    color: var(--color-dark);
+
+
+
+    background: transparent;
+
+
+
+}
+
+
+
+
+
+.accordion-button:focus {
+
+
+
+    box-shadow: none;
+
+
+
+}
+
+
+
+
+
+.accordion-button::after {
+
+
+
+    width: 16px;
+
+    height: 16px;
+
+
+
+    background-size: 16px;
+
+
+
+}
+
+
+
+
+
+.accordion-body {
+
+
+
+    padding:
+
+        0
+
+        50px
+
+        30px
+
+        0;
+
+
+
+    color: var(--color-muted);
+
+
+
+    font-size: 0.98rem;
+
+
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+
+   RESERVA / CTA
+
+========================================================= */
+
+
+
+.booking {
+
+
+
+    position: relative;
+
+
+
+    display: flex;
+
+
+
+    min-height: 750px;
+
+
+
+    align-items: center;
+
+
+
+    padding-top: 120px;
+
+    padding-bottom: 120px;
+
+
+
+    color: var(--color-white);
+
+
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    background-position: center;
+
+
+
+}
+
+
+
+
+
+.booking::before {
+
+
+
+    content: "";
+
+
+
+    position: absolute;
+
+
+
+    inset: 0;
+
+
+
+    background:
+
+        linear-gradient(
+
+            rgba(14, 23, 16, 0.28),
+
+            rgba(14, 23, 16, 0.58)
+
+        );
+
+
+
+}
+
+
+
+
+
+.booking .container {
+
+
+
+    position: relative;
+
+
+
+    z-index: 2;
+
+
+
+}
+
+
+
+
+
+.booking-title {
+
+
+
+    margin-bottom: 30px;
+
+
+
+    color: var(--color-white);
+
+
+
+    font-size: clamp(3.2rem, 6vw, 6rem);
+
+
+
+    line-height: 1;
+
+
+
+    letter-spacing: -0.04em;
+
+
+
+}
+
+
+
+
+
+.booking-description {
+
+
+
+    max-width: 620px;
+
+
+
+    margin-right: auto;
+
+    margin-left: auto;
+
+
+
+    color: rgba(255, 255, 255, 0.8);
+
+
+
+    font-size: 1.12rem;
+
+
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+
+   FOOTER
+
+========================================================= */
+
+
+
+.footer {
+
+
+
+    padding-top: 100px;
+
+
+
+    color: rgba(255, 255, 255, 0.68);
+
+
+
+    background-color: #101611;
+
+
+
+}
+
+
+
+
+
+.footer-logo {
+
+
+
+    display: inline-block;
+
+
+
+    margin-bottom: 25px;
+
+
+
+    color: var(--color-white);
+
+
+
+    font-family: var(--font-display);
+
+
+
+    font-size: 2.3rem;
+
+
+
+}
+
+
+
+
+
+.footer-logo:hover {
+
+
+
+    color: var(--color-white);
+
+
+
+}
+
+
+
+
+
+.footer-description {
+
+
+
+    max-width: 390px;
+
+
+
+    color: rgba(255, 255, 255, 0.55);
+
+
+
+}
+
+
+
+
+
+.footer-title {
+
+
+
+    margin-bottom: 25px;
+
+
+
+    color: var(--color-white);
+
+
+
+    font-family: var(--font-primary);
+
+
+
+    font-size: 0.72rem;
+
+    font-weight: 500;
+
+
+
+    letter-spacing: 0.17em;
+
+
+
+    text-transform: uppercase;
+
+
+
+}
+
+
+
+
+
+.footer-links li {
+
+
+
+    margin-bottom: 12px;
+
+
+
+}
+
+
+
+
+
+.footer-links a {
+
+
+
+    color: rgba(255, 255, 255, 0.62);
+
+
+
+    transition: color var(--transition);
+
+
+
+}
+
+
+
+
+
+.footer-links a:hover {
+
+
+
+    color: var(--color-white);
+
+
+
+}
+
+
+
+
+
+.footer-bottom {
+
+
+
+    margin-top: 90px;
+
+
+
+    padding-top: 30px;
+
+    padding-bottom: 30px;
+
+
+
+    border-top: 1px solid rgba(255, 255, 255, 0.13);
+
+
+
+    color: rgba(255, 255, 255, 0.42);
+
+
+
+    font-size: 0.72rem;
+
+
+
+    letter-spacing: 0.08em;
+
+
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+
+   TABLET
+
+========================================================= */
+
+
+
+@media (max-width: 991.98px) {
+
+
+
+    :root {
+
+        --section-padding: 95px;
+
+    }
+
+
+
+
+
+    /* Navbar */
+
+
+
+    #mainNavbar {
+
+
+
+        padding-top: 15px;
+
+        padding-bottom: 15px;
+
+
+
+        background-color: rgba(23, 32, 25, 0.95);
+
+
+
+        backdrop-filter: blur(10px);
+
+
+
+    }
+
+
+
+
+
+    .navbar-collapse {
+
+
+
+        margin-top: 15px;
+
+
+
+        padding-top: 15px;
+
+        padding-bottom: 20px;
+
+
+
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+
+
+
+    }
+
+
+
+
+
+    .navbar .nav-link {
+
+
+
+        padding-top: 13px !important;
+
+        padding-bottom: 13px !important;
+
+
+
+    }
+
+
+
+
+
+    .btn-reserva {
+
+
+
+        margin-top: 12px;
+
+
+
+    }
+
+
+
+
+
+    /* Hero */
+
+
+
+    .hero {
+
+
+
+        min-height: 900px;
+
+
+
+        padding-top: 150px;
+
+
+
+    }
+
+
+
+
+
+    .hero-title {
+
+
+
+        max-width: 750px;
+
+
+
+    }
+
+
+
+
+
+    /* Sobre */
+
+
+
+    .about-image img {
+
+
+
+        height: 600px;
+
+
+
+    }
+
+
+
+
+
+    /* Features */
+
+
+
+    .feature-item {
+
+
+
+        padding-top: 65px;
+
+        padding-bottom: 65px;
+
+
+
+    }
+
+
+
+
+
+    .feature-image img {
+
+
+
+        height: 540px;
+
+
+
+    }
+
+
+
+
+
+    /* Experience */
+
+
+
+    .experience-image {
+
+
+
+        min-height: 600px;
+
+
+
+    }
+
+
+
+
+
+    .experience-content {
+
+
+
+        padding: 90px 8%;
+
+
+
+    }
+
+
+
+
+
+    /* Localização */
+
+
+
+    .location-map,
+
+    .location-map-placeholder {
+
+
+
+        height: 500px;
+
+        min-height: 500px;
+
+
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+
+   MOBILE
+
+========================================================= */
+
+
+
+@media (max-width: 767.98px) {
+
+
+
+    :root {
+
+        --section-padding: 75px;
+
+    }
+
+
+
+
+
+    body {
+
+
+
+        font-size: 15px;
+
+
+
+    }
+
+
+
+
+
+    .section-title {
+
+
+
+        margin-bottom: 25px;
+
+
+
+        font-size: 2.7rem;
+
+
+
+    }
+
+
+
+
+
+    .section-lead {
+
+
+
+        font-size: 1.07rem;
+
+
+
+    }
+
+
+
+
+
+    /* Hero */
+
+
+
+    .hero {
+
+
+
+        min-height: 820px;
+
+
+
+        padding-top: 130px;
+
+        padding-bottom: 30px;
+
+
+
+        background-position: 55% center;
+
+
+
+    }
+
+
+
+
+
+    .hero-content {
+
+
+
+        padding-bottom: 50px;
+
+
+
+    }
+
+
+
+
+
+    .hero-title {
+
+
+
+        font-size: clamp(3.1rem, 14vw, 4.6rem);
+
+
+
+    }
+
+
+
+
+
+    .hero-description {
+
+
+
+        font-size: 1rem;
+
+
+
+    }
+
+
+
+
+
+    .hero-info-item {
+
+
+
+        padding-top: 20px;
+
+        padding-bottom: 18px;
+
+
+
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+
+
+
+    }
+
+
+
+
+
+    .hero-info-item strong {
+
+
+
+        font-size: 1.55rem;
+
+
+
+    }
+
+
+
+
+
+    /* Sobre */
+
+
+
+    .about-image img {
+
+
+
+        height: 480px;
+
+
+
+    }
+
+
+
+
+
+    /* Stats */
+
+
+
+    .stat-item {
+
+
+
+        min-height: 155px;
+
+
+
+        border-right: 1px solid rgba(255, 255, 255, 0.12);
+
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+
+
+
+    }
+
+
+
+
+
+    /* Features */
+
+
+
+    .feature-item {
+
+
+
+        padding-top: 55px;
+
+        padding-bottom: 55px;
+
+
+
+    }
+
+
+
+
+
+    .feature-image img {
+
+
+
+        height: 460px;
+
+
+
+    }
+
+
+
+
+
+    .feature-item h3 {
+
+
+
+        font-size: 2.45rem;
+
+
+
+    }
+
+
+
+
+
+    /* Ambientes */
+
+
+
+    .space-card > img {
+
+
+
+        height: 450px;
+
+
+
+    }
+
+
+
+
+
+    /* Experience */
+
+
+
+    .experience-image {
+
+
+
+        min-height: 500px;
+
+
+
+    }
+
+
+
+
+
+    .experience-content {
+
+
+
+        padding: 75px 25px;
+
+
+
+    }
+
+
+
+
+
+    /* Amenities */
+
+
+
+    .amenity-group {
+
+
+
+        padding: 35px 28px;
+
+
+
+    }
+
+
+
+
+
+    .amenity-number {
+
+
+
+        margin-bottom: 35px;
+
+
+
+    }
+
+
+
+
+
+    /* Galeria */
+
+
+
+    .gallery-item,
+
+    .gallery .col-md-8 .gallery-item {
+
+
+
+        height: 380px;
+
+
+
+    }
+
+
+
+
+
+    /* Localização */
+
+
+
+    .location-map,
+
+    .location-map-placeholder {
+
+
+
+        height: 430px;
+
+        min-height: 430px;
+
+
+
+    }
+
+
+
+
+
+    /* FAQ */
+
+
+
+    .accordion-button {
+
+
+
+        padding-top: 23px;
+
+        padding-bottom: 23px;
+
+
+
+        font-size: 1.2rem;
+
+
+
+    }
+
+
+
+
+
+    /* Booking */
+
+
+
+    .booking {
+
+
+
+        min-height: 680px;
+
+
+
+        padding-top: 90px;
+
+        padding-bottom: 90px;
+
+
+
+    }
+
+
+
+
+
+    .booking-title {
+
+
+
+        font-size: 3.2rem;
+
+
+
+    }
+
+
+
+
+
+    /* Footer */
+
+
+
+    .footer {
+
+
+
+        padding-top: 75px;
+
+
+
+    }
+
+
+
+
+
+    .footer-bottom {
+
+
+
+        margin-top: 60px;
+
+
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+
+   TELAS PEQUENAS
+
+========================================================= */
+
+
+
+@media (max-width: 575.98px) {
+
+
+
+    .hero-title {
+
+
+
+        font-size: 3.25rem;
+
+
+
+    }
+
+
+
+
+
+    .btn {
+
+
+
+        width: 100%;
+
+
+
+        padding-top: 15px;
+
+        padding-bottom: 15px;
+
+
+
+    }
+
+
+
+
+
+    .about-image img {
+
+
+
+        height: 420px;
+
+
+
+    }
+
+
+
+
+
+    .feature-image img {
+
+
+
+        height: 410px;
+
+
+
+    }
+
+
+
+
+
+    .space-card > img {
+
+
+
+        height: 420px;
+
+
+
+    }
+
+
+
+
+
+    .gallery-item,
+
+    .gallery .col-md-8 .gallery-item {
+
+
+
+        height: 330px;
+
+
+
+    }
+
+
+
+
+
+    .booking-title {
+
+
+
+        font-size: 2.8rem;
+
+
+
+    }
+
+}
+
+/* =========================================================
+   DISPONIBILIDADE
+========================================================= */
+
+.availability {
+    background-color: #ebe7dc;
+}
+
+/* =========================================================
+   ESTRUTURA DO CALENDÁRIO
+========================================================= */
+
+.calendar-wrapper {
+    padding: 36px;
+    border: 1px solid rgba(23, 32, 25, 0.12);
+    background-color: #f7f4ec;
+}
+
+/* =========================================================
+   LEGENDA
+========================================================= */
+
+.calendar-legend {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 22px;
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(23, 32, 25, 0.12);
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-muted);
+    font-size: 0.72rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+}
+
+.legend-color {
+    display: block;
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+}
+
+.legend-available {
+    border: 1px solid rgba(63, 85, 66, 0.45);
+    background-color: #f7f4ec;
+}
+
+.legend-selected {
+    background-color: var(--color-green);
+}
+
+.legend-unavailable {
+    background: repeating-linear-gradient(
+        135deg,
+        #d2cec4,
+        #d2cec4 3px,
+        #ebe7df 3px,
+        #ebe7df 6px
+    );
+}
+
+.legend-today {
+    border: 2px solid var(--color-green);
+    border-radius: 50%;
+}
+
+/* =========================================================
+   FULLCALENDAR
+========================================================= */
+
+.fc {
+    --fc-border-color: rgba(23, 32, 25, 0.10);
+    --fc-today-bg-color: transparent;
+    font-family: var(--font-primary);
+}
+
+.fc-theme-standard td,
+.fc-theme-standard th {
+    border-color: rgba(23, 32, 25, 0.10);
+}
+
+/* =========================================================
+   CABEÇALHO DO CALENDÁRIO
+========================================================= */
+
+.fc .fc-toolbar {
+    margin-bottom: 30px;
+}
+
+.fc .fc-toolbar-title {
+    color: var(--color-dark);
+    font-family: var(--font-display);
+    font-size: clamp(1.7rem, 3vw, 2.4rem);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+}
+
+/* =========================================================
+   BOTÕES ANTERIOR / PRÓXIMO
+========================================================= */
+
+.fc .fc-button {
+    display: flex;
+    width: 46px;
+    height: 46px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    color: var(--color-dark);
+    border: 1px solid rgba(23, 32, 25, 0.18);
+    border-radius: 50%;
+    background-color: transparent;
+    box-shadow: none !important;
+    transition: color 0.25s ease, border-color 0.25s ease,
+        background-color 0.25s ease, transform 0.25s ease;
+}
+
+.fc .fc-button:hover {
+    color: var(--color-white);
+    border-color: var(--color-green);
+    background-color: var(--color-green);
+    transform: scale(1.05);
+}
+
+.fc .fc-button-primary:not(:disabled):active,
+.fc .fc-button-primary:not(:disabled).fc-button-active {
+    color: var(--color-white);
+    border-color: var(--color-green);
+    background-color: var(--color-green);
+}
+
+/* =========================================================
+   DIAS DA SEMANA
+========================================================= */
+
+.fc .fc-col-header-cell {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-left: 0;
+    border-right: 0;
+    background-color: transparent;
+}
+
+.fc .fc-col-header-cell-cushion {
+    color: var(--color-muted);
+    font-size: 0.67rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* =========================================================
+   CÉLULAS DOS DIAS
+========================================================= */
+
+.fc .fc-daygrid-day {
+    position: relative;
+    height: 96px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.20);
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.fc .fc-daygrid-day-frame {
+    position: relative;
+    min-height: 96px;
+}
+
+.fc .fc-daygrid-day-number {
+    position: relative;
+    z-index: 5;
+    padding: 12px;
+    color: var(--color-dark);
+    font-size: 0.83rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* =========================================================
+   DATA DISPONÍVEL
+========================================================= */
+
+.fc .fc-daygrid-day:not(.date-unavailable):not(.date-past):hover {
+    z-index: 3;
+    background-color: rgba(63, 85, 66, 0.09);
+    box-shadow: inset 0 0 0 1px rgba(63, 85, 66, 0.35);
+}
+
+.fc .fc-daygrid-day:not(.date-unavailable):not(.date-past):hover
+.fc-daygrid-day-number {
+    color: var(--color-green);
+}
+
+/* =========================================================
+   HOJE
+========================================================= */
+
+/* O destaque nativo do FullCalendar usa o relógio do navegador.
+   Neutralizamos esse estado e usamos .date-today, criada pelo nosso JS
+   com a data fornecida pelo servidor. */
+.fc .fc-day-today {
+    background-color: transparent !important;
+}
+
+.fc .fc-day-today .fc-daygrid-day-number {
+    color: var(--color-dark);
+    border: 0;
+}
+
+.fc .date-today .fc-daygrid-day-number {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    margin: 7px;
+    padding: 0;
+    color: var(--color-green);
+    border: 2px solid var(--color-green);
+    border-radius: 50%;
+}
+
+/* =========================================================
+   DATAS PASSADAS
+========================================================= */
+
+.fc .date-past {
+    cursor: default;
+    pointer-events: none;
+    background-color: rgba(23, 32, 25, 0.025);
+}
+
+.fc .date-past .fc-daygrid-day-number {
+    color: rgba(23, 32, 25, 0.25);
+}
+
+.fc .date-past:hover {
+    box-shadow: none;
+}
+
+/* =========================================================
+   DATAS INDISPONÍVEIS
+========================================================= */
+
+.fc .date-unavailable {
+    cursor: not-allowed;
+    background: repeating-linear-gradient(
+        135deg,
+        rgba(23, 32, 25, 0.07),
+        rgba(23, 32, 25, 0.07) 4px,
+        rgba(23, 32, 25, 0.025) 4px,
+        rgba(23, 32, 25, 0.025) 8px
+    );
+}
+
+.fc .date-unavailable .fc-daygrid-day-number {
+    color: rgba(23, 32, 25, 0.32);
+    text-decoration: line-through;
+}
+
+.fc .date-unavailable:hover {
+    box-shadow: none;
+}
+
+.fc .fc-bg-event.booked-date {
+    opacity: 0;
+}
+
+/* =========================================================
+   FINAIS DE SEMANA
+========================================================= */
+
+.fc .fc-day-sat:not(.date-unavailable):not(.date-past),
+.fc .fc-day-sun:not(.date-unavailable):not(.date-past) {
+    background-color: rgba(218, 213, 200, 0.18);
+}
+
+/* =========================================================
+   PERÍODO SELECIONADO
+========================================================= */
+
+.fc .selected-day {
+    background-color: rgba(79, 105, 82, 0.17) !important;
+}
+
+.fc .selected-day .fc-daygrid-day-number {
+    color: var(--color-dark);
+    font-weight: 600;
+}
+
+/* =========================================================
+   CHECK-IN
+========================================================= */
+
+.fc .selected-start {
+    background-color: var(--color-green) !important;
+}
+
+.fc .selected-start .fc-daygrid-day-number {
+    color: var(--color-white);
+    font-weight: 600;
+}
+
+.fc .selected-start .fc-daygrid-day-frame::after {
+    content: "Entrada";
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    z-index: 6;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 0.56rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+/* =========================================================
+   CHECK-OUT
+========================================================= */
+
+.fc .selected-end {
+    background-color: var(--color-dark) !important;
+}
+
+.fc .selected-end .fc-daygrid-day-number {
+    color: var(--color-white);
+    font-weight: 600;
+}
+
+.fc .selected-end .fc-daygrid-day-frame::after {
+    content: "Saída";
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    z-index: 6;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 0.56rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+/* =========================================================
+   PAINEL LATERAL
+========================================================= */
+
+.availability-panel {
+    position: sticky;
+    top: 115px;
+    padding: 42px;
+    color: var(--color-white);
+    background-color: var(--color-dark);
+}
+
+.availability-panel-label {
+    display: block;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.52);
+    font-size: 0.67rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.availability-panel h3 {
+    margin-bottom: 20px;
+    color: var(--color-white);
+    font-size: 2.2rem;
+    line-height: 1.1;
+}
+
+.availability-panel > p {
+    margin-bottom: 0;
+    color: rgba(255, 255, 255, 0.58);
+}
+
+/* =========================================================
+   CHECK-IN / CHECK-OUT NO PAINEL
+========================================================= */
+
+.selected-dates {
+    margin-top: 35px;
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.selected-date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.selected-date span {
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 0.66rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.selected-date strong {
+    color: var(--color-white);
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-align: right;
+}
+
+/* =========================================================
+   MENSAGEM DE DISPONIBILIDADE
+========================================================= */
+
+.availability-message {
+    min-height: 28px;
+    margin-top: 20px;
+    font-size: 0.82rem;
+}
+
+.availability-message.success {
+    color: #bdd7bd;
+}
+
+.availability-message.error {
+    color: #e7aaa3;
+}
+
+.availability-message.loading {
+    color: rgba(255, 255, 255, 0.58);
+}
+
+/* =========================================================
+   BOTÕES DO PAINEL
+========================================================= */
+
+.availability-panel .btn {
+    min-height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.availability-panel .btn-primary-custom {
+    border-color: #687e69;
+    background-color: #687e69;
+}
+
+.availability-panel .btn-primary-custom:hover {
+    color: var(--color-dark);
+    border-color: var(--color-white);
+    background-color: var(--color-white);
+}
+
+.availability-panel .btn-outline-dark-custom {
+    color: var(--color-white);
+    border-color: rgba(255, 255, 255, 0.50);
+    background-color: transparent;
+}
+
+.availability-panel .btn-outline-dark-custom:hover {
+    color: var(--color-dark);
+    border-color: var(--color-white);
+    background-color: var(--color-white);
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991.98px) {
+    .availability-panel {
+        position: static;
+        top: auto;
+    }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767.98px) {
+    .calendar-wrapper {
+        padding: 22px 12px;
+    }
+
+    .calendar-legend {
+        gap: 13px 18px;
+        margin-bottom: 22px;
+        padding: 0 5px 20px;
+    }
+
+    .legend-item {
+        font-size: 0.64rem;
+    }
+
+    .legend-color {
+        width: 12px;
+        height: 12px;
+    }
+
+    .fc .fc-toolbar {
+        margin-bottom: 20px;
+    }
+
+    .fc .fc-toolbar-title {
+        font-size: 1.4rem;
+    }
+
+    .fc .fc-button {
+        width: 38px;
+        height: 38px;
+    }
+
+    .fc .fc-col-header-cell {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .fc .fc-col-header-cell-cushion {
+        font-size: 0.58rem;
+    }
+
+    .fc .fc-daygrid-day,
+    .fc .fc-daygrid-day-frame {
+        height: 68px;
+        min-height: 68px;
+    }
+
+    .fc .fc-daygrid-day-number {
+        padding: 7px;
+        font-size: 0.72rem;
+    }
+
+    .fc .date-today .fc-daygrid-day-number {
+        width: 26px;
+        height: 26px;
+        margin: 4px;
+        font-size: 0.68rem;
+    }
+
+    .fc .selected-start .fc-daygrid-day-frame::after,
+    .fc .selected-end .fc-daygrid-day-frame::after {
+        display: none;
+    }
+
+    .availability-panel {
+        padding: 34px 26px;
+    }
+
+    .availability-panel h3 {
+        font-size: 1.9rem;
+    }
+}
+
+/* =========================================================
+   CELULARES PEQUENOS
+========================================================= */
+
+@media (max-width: 575.98px) {
+    .calendar-wrapper {
+        padding-right: 7px;
+        padding-left: 7px;
+    }
+
+    .calendar-legend {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    .fc .fc-toolbar-title {
+        font-size: 1.22rem;
+    }
+
+    .fc .fc-button {
+        width: 34px;
+        height: 34px;
+    }
+
+    .fc .fc-daygrid-day,
+    .fc .fc-daygrid-day-frame {
+        height: 58px;
+        min-height: 58px;
+    }
+
+    .fc .fc-daygrid-day-number {
+        padding: 5px;
+        font-size: 0.68rem;
+    }
+
+    .selected-date {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .selected-date strong {
+        text-align: left;
+    }
+}
